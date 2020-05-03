@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
-import { SafeAreaView, View, Text } from 'react-native';
+import { ScrollView } from 'react-native';
 
+import { ItemDetailsTopInfo, ItemDetailsMidInfo, ItemDetailsBottomInfo } from '../components/ItemDetails';
 import { dataPickUpDetails } from '../data/dataPickUpDetails';
 
 class PickUpDetails extends Component {
 
   render() {
+
     return (
-      <SafeAreaView>
-        <Text>Details Page</Text>
-      </SafeAreaView>
+      <ScrollView>
+        <ItemDetailsTopInfo data={dataPickUpDetails} />
+        <ItemDetailsMidInfo data={dataPickUpDetails} />
+        <ItemDetailsBottomInfo data={dataPickUpDetails} />
+      </ScrollView>
     )
   }
 }
