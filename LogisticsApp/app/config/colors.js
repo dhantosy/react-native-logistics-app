@@ -5,5 +5,5 @@ export default {
   subtleText: '#9a9a9a',
   border: '#ccc',
   link: '#007AFF',
-  rowUnderLay: 'rgba(154, 154, 154, 0.25)',
+  rowUnderLay: '#fff',
 }
