@@ -1,34 +1,56 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { View, Text, TouchableHighlight, Image } from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
 
+import Actions from './Actions';
 import styles from './styles';
 import colors from '../../config/colors';
 
-const ListItem = ({ item = {}, onPress }) => {
+class ListItem extends Component {
 
-  return (
-    <TouchableHighlight
-      onPress={onPress}
-      underlayColor={colors.rowUnderLay}
-    >
-      <View style={styles.row}>
-        <Image
-          source={{ uri: item.image_url}}
-          style={styles.image}
-        />
-        <View style={styles.infoContainer}>
-          <View style={styles.infoDetail}>
-            <Text style={styles.quantity}>{item.quantity} Paket ({item.weight} KG)</Text>
-            <Text style={styles.time}>{item.pickup_time}</Text>
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      isExpanded: false,
+    }
+  }
+
+  handleRowPress = () => {
+    this.setState({
+      isExpanded: !this.state.isExpanded
+    })
+  }
+
+  render() {
+    
+    return (
+      <TouchableHighlight
+        underlayColor={colors.rowUnderLay}
+        onPress={() => this.handleRowPress()}
+      >
+        <View style={styles.rowContainer}>
+          <View style={styles.row}>
+            <Image
+              source={{ uri: this.props.item.image_url }}
+              style={styles.image}
+            />
+            <View style={styles.infoContainer}>
+              <View style={styles.infoDetail}>
+                <Text style={styles.quantity}>{this.props.item.quantity} Paket ({this.props.item.weight} KG)</Text>
+                <Text style={styles.time}>{this.props.item.pickup_time}</Text>
+              </View>
+              <View style={styles.infoDetail}>
+                <Text style={styles.address}>{this.props.item.address}</Text>
+              </View>
+            </View>
           </View>
-          <View style={styles.infoDetail}>
-            <Text style={styles.address}>{item.address}</Text>
-          </View>
+          {
+            !this.state.isExpanded ? null : <Actions navigation={this.props.navigation} />
+          }
         </View>
-      </View>
-    </TouchableHighlight>
-  )
+      </TouchableHighlight>
+    )
+  }
 }
 
 export default ListItem;
