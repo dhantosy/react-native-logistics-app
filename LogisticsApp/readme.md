@@ -1,4 +1,4 @@
-# React Native Logistics App
+## React Native Logistics App
 
 
 ### Getting started
@@ -42,3 +42,9 @@ cd android/
 ```shell
 cd app/build/outputs/apk/
 ```
+
+
+------------------------------
+
+TODO:
+- refactor components.
