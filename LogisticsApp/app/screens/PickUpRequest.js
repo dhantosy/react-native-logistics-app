@@ -8,11 +8,8 @@ import colors from '../config/colors';
 
 class PickUpRequest extends Component {
 
-  handleRowPress = (item) => {
-    this.props.navigation.navigate('Details', item);
-  }
-
   render() {
+
     return (
       <SafeAreaView style={{ flex: 1, backgroundColor: colors.whiteBackground }}>
         <View style={{ marginTop: 20, marginBottom: 10, marginHorizontal: 15 }}>
@@ -26,7 +23,7 @@ class PickUpRequest extends Component {
             return (
               <ListItem
                 item={item}
-                onPress={() => this.handleRowPress(item)}
+                navigation={this.props.navigation}
               />
             )
           }}
