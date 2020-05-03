@@ -5,7 +5,7 @@ class CreateOrder extends Component {
 
   render() {
     return (
-      <SafeAreaView>
+      <SafeAreaView style={{ flex: 1, justifyContent: "center", alignItems: 'center' }}>
         <Text>Create Order Page</Text>
       </SafeAreaView>
     )
