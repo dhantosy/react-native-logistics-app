@@ -9,7 +9,7 @@ const ItemDetailsBottomInfo = (props) => {
 
   // this template needs to be refactored
   return (
-    <View>
+    <View style={{ marginBottom: 50 }}>
       <View style={styles.rowBorder}>
         <View style={styles.infoContainer}>
           <View style={styles.infoDetail}>

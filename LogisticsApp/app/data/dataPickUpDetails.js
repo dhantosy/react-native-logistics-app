@@ -5,5 +5,9 @@ export const dataPickUpDetails = {
   pickup_time: '09:00 - 12:00',
   phone: '08771234569',
   address: 'Grand Depok City Blok A8 No. 61A, Jl. Grand Boul Depok City - Cluster Mawar',
-  image_url: 'https://source.unsplash.com/nXhND4y3riM/100x100/'
+  image_url: 'https://source.unsplash.com/nXhND4y3riM/100x100/',
+  location: {
+    lat: '-6.4289479',
+    lng: '106.824666'
+  }
 }

@@ -27,7 +27,7 @@ export default StyleSheet.create({
     alignItems: 'center',
     backgroundColor: colors.whiteBackground,
     paddingHorizontal: 25,
-    borderTopColor: colors.subtleText,
+    borderTopColor: '#ddd',
     borderTopWidth: 1,
     paddingVertical: 15
   },
@@ -101,5 +101,17 @@ export default StyleSheet.create({
     fontSize: 14,
     color: colors.blackText,
     flex: 1,
+  },
+  mapContainer: {
+    width: 300,
+    height: 150,
+    flex: 1,
+    marginHorizontal: 20,
+    marginVertical: 20
+  },
+  mapImage: {
+    width: 375,
+    height: 150,
+    flex: 1
   }
 });

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { ScrollView } from 'react-native';
 
-import { ItemDetailsTopInfo, ItemDetailsMidInfo, ItemDetailsBottomInfo } from '../components/ItemDetails';
+import { ItemDetailsTopInfo, ItemDetailsMaps, ItemDetailsMidInfo, ItemDetailsBottomInfo } from '../components/ItemDetails';
 import { dataPickUpDetails } from '../data/dataPickUpDetails';
 import colors from '../config/colors';
 
@@ -12,6 +12,7 @@ class PickUpDetails extends Component {
     return (
       <ScrollView style={{ paddingVertical: 20, backgroundColor: colors.whiteBackground }}>
         <ItemDetailsTopInfo data={dataPickUpDetails} />
+        <ItemDetailsMaps data={dataPickUpDetails} />
         <ItemDetailsMidInfo data={dataPickUpDetails} />
         <ItemDetailsBottomInfo data={dataPickUpDetails} />
       </ScrollView>
