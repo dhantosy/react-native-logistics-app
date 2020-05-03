@@ -44,14 +44,14 @@ export default StyleSheet.create({
   quantity: {
     textAlign: 'left',
     fontSize: 16,
-    fontWeight: '600',
+    fontWeight: '700',
     color: colors.blackText,
     flex: 1,
   },
   time: {
     textAlign: 'right',
     fontSize: 16,
-    fontWeight: '600',
+    fontWeight: '700',
     color: colors.redText,
     flex: 1,
   },
@@ -65,7 +65,7 @@ export default StyleSheet.create({
     paddingHorizontal: 25,
     paddingVertical: 8,
     marginHorizontal: 10,
-    fontWeight: '600',
+    fontWeight: '700',
     fontSize: 16
   },
   buttonSecondary: {
@@ -76,7 +76,7 @@ export default StyleSheet.create({
     paddingHorizontal: 25,
     paddingVertical: 8,
     marginHorizontal: 10,
-    fontWeight: '600',
+    fontWeight: '700',
     fontSize: 16
   },
   buttonPrimary: {
@@ -85,7 +85,7 @@ export default StyleSheet.create({
     paddingHorizontal: 25,
     paddingVertical: 8,
     marginHorizontal: 10,
-    fontWeight: '600',
+    fontWeight: '700',
     fontSize: 16
   }
 });

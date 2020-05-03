@@ -8,7 +8,7 @@ export default StyleSheet.create({
   },
   titlePage: {
     fontSize: 20,
-    fontWeight: '600',
+    fontWeight: '700',
     color: colors.blackText
   }
 });

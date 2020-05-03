@@ -15,8 +15,10 @@ const ItemDetailsTopInfo = (props) => {
         />
         <View style={styles.infoContainer}>
           <View style={styles.infoDetail}>
-            <Text style={styles.quantity}>Merchant's Name</Text>
-            <Text style={styles.quantity}>{props.data.name_merchant}</Text>
+            <Text style={styles.labelTitle}>Merchant's Name</Text>
+          </View>
+          <View style={styles.infoDetail}>
+            <Text style={styles.mainTitle}>{props.data.name_merchant}</Text>
           </View>
         </View>
       </View>

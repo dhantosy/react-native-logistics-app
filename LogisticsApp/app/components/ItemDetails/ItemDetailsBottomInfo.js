@@ -10,48 +10,54 @@ const ItemDetailsBottomInfo = (props) => {
   // this template needs to be refactored
   return (
     <View>
-      <View style={styles.row}>
+      <View style={styles.rowBorder}>
         <View style={styles.infoContainer}>
           <View style={styles.infoDetail}>
-            <IconFontAwesome
-              name='phone'
-              size={20}
-              color={colors.subtleText}
-              style={styles.chevron}
-            />
-            <Text style={styles.quantity}>{props.data.phone}</Text>
-            <IconFontAwesome
-              name='chevron-right'
-              size={20}
-              color={colors.subtleText}
-              style={styles.chevron}
-            />
+            <View style={styles.infoDetailLeft}>
+              <IconFontAwesome
+                name='phone'
+                size={20}
+                color={colors.redText}
+                style={styles.iconLeft}
+              />
+              <Text style={styles.infoName}>Phone</Text>
+            </View>
+            <View style={styles.infoDetailRight}>
+              <Text style={styles.infoName}>{props.data.phone}</Text>
+              <IconFontAwesome
+                name='chevron-right'
+                size={20}
+                color={colors.redText}
+                style={styles.iconLeft}
+              />
+            </View>
           </View>
         </View>
       </View>
-      <View style={styles.row}>
+      <View style={styles.rowBorder}>
         <View style={styles.infoContainer}>
           <View style={styles.infoDetail}>
             <IconFontAwesome
               name='box'
               size={20}
-              color={colors.subtleText}
+              color={colors.redText}
               style={styles.chevron}
             />
+            <Text style={styles.infoName}>Package Details</Text>
             <IconFontAwesome
               name='chevron-right'
               size={20}
-              color={colors.subtleText}
+              color={colors.redText}
               style={styles.chevron}
             />
           </View>
         </View>
       </View>
-      <View style={styles.row}>
+      <View style={styles.rowBorder}>
         <TouchableOpacity
-          style={styles.buttonGrey}
+          style={styles.buttonPrimary}
         >
-          <Text>Start</Text>
+          <Text style={styles.buttonText}>Start</Text>
         </TouchableOpacity>
       </View>
     </View>

@@ -3,20 +3,10 @@ import colors from '../../config/colors';
 
 export default StyleSheet.create({
   image: {
-    width: 50,
-    height: 50,
-    borderRadius: 25,
+    width: 70,
+    height: 70,
+    borderRadius: 35,
     marginRight: 15
-  },
-  rowContainer: {
-    paddingHorizontal: 15,
-    paddingVertical: 15,
-    borderColor: colors.border,
-    borderWidth: 1,
-    borderRadius: 3,
-    marginVertical: 5,
-    marginHorizontal: 15,
-    backgroundColor: '#fff'
   },
   rowButton: {
     flexDirection: 'row',
@@ -29,11 +19,22 @@ export default StyleSheet.create({
   row: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#fff'
+    backgroundColor: colors.whiteBackground,
+    paddingHorizontal: 25
+  },
+  rowBorder: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: colors.whiteBackground,
+    paddingHorizontal: 25,
+    borderTopColor: colors.subtleText,
+    borderTopWidth: 1,
+    paddingVertical: 15
   },
   infoContainer: {
     flexDirection: 'column',
-    flex: 1
+    flex: 1,
+    marginBottom: 5
   },
   infoDetail: {
     flexDirection: 'row',
@@ -41,51 +42,64 @@ export default StyleSheet.create({
     alignSelf: 'stretch',
     marginBottom: 5
   },
-  quantity: {
+  infoDetailLeft: {
+    flexDirection: 'row',
+    flex: 1,
+    alignSelf: 'stretch',
+  },
+  infoDetailRight: {
+    flexDirection: 'row',
+    flex: 1,
+    alignSelf: 'stretch',
+    textAlign: 'right'
+  },
+  infoName: {
     textAlign: 'left',
     fontSize: 16,
-    fontWeight: '600',
+    fontWeight: '700',
     color: colors.blackText,
     flex: 1,
-  },
-  time: {
-    textAlign: 'right',
-    fontSize: 16,
-    fontWeight: '600',
-    color: colors.redText,
-    flex: 1,
+    marginLeft: 15
   },
   address: {
     fontSize: 13,
     color: colors.subtleText
   },
-  buttonGrey: {
-    backgroundColor: '#ddd',
-    borderRadius: 3,
-    paddingHorizontal: 25,
-    paddingVertical: 8,
-    marginHorizontal: 10,
-    fontWeight: '600',
-    fontSize: 16
-  },
-  buttonSecondary: {
-    backgroundColor: colors.whiteBackground,
-    borderRadius: 3,
-    borderWidth: 1,
-    borderColor: colors.redText,
-    paddingHorizontal: 25,
-    paddingVertical: 8,
-    marginHorizontal: 10,
-    fontWeight: '600',
-    fontSize: 16
-  },
   buttonPrimary: {
     backgroundColor: colors.redText,
     borderRadius: 3,
     paddingHorizontal: 25,
-    paddingVertical: 8,
-    marginHorizontal: 10,
-    fontWeight: '600',
-    fontSize: 16
+    paddingVertical: 12,
+    fontWeight: '700',
+    fontSize: 16,
+    flex: 1,
+    alignSelf: 'stretch',
+    textAlign: 'center'
+  },
+  buttonText: {
+    color: colors.whiteBackground,
+    textAlign: 'center',
+    fontSize: 16,
+    fontWeight: '700'
+  },
+  labelTitle: {
+    fontSize: 16,
+    fontWeight: '700',
+    flex: 1,
+  },
+  labelInfo: {
+    fontSize: 14,
+    fontWeight: '700',
+    flex: 1,
+  },
+  mainTitle: {
+    fontSize: 24,
+    fontWeight: '300'
+  },
+  textRight: {
+    textAlign: 'right',
+    fontSize: 14,
+    color: colors.blackText,
+    flex: 1,
   }
 });
